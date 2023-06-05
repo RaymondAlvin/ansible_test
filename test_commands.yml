@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: change directory to home
+    command: cd ~
+
+  - name: create directory called ion
+    command: mkdir ion
+
+  - name: create file called ion.txt
+    command: nano ion.txt
